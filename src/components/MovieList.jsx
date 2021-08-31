@@ -8,7 +8,7 @@ class MovieList extends React.Component {
     const { movies } = this.props;
     return (
       <div>
-        {/* Passo 5: fazer dinâmico com a Ley sendo o valor único de nome. */}
+        {/* Passo 5: fazer dinâmico com a Key sendo o valor único de nome. */}
         {movies.map((mov) => (
           <MovieCard key={ mov.title } movie={ mov } />
         ))}
