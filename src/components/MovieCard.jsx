@@ -12,17 +12,19 @@ class MovieCard extends React.Component {
     const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props;
     return (
     // Passo 6
-      <div>
-        {/* Passo 7 */}
-        <img src={ imagePath } alt={ title } />
-        {/* Passo 8 */}
-        <h4>{ title }</h4>
-        {/* Passo 9 */}
-        <h5>{subtitle}</h5>
-        {/* Passo 10 */}
-        <p>{ storyline }</p>
-        {/* Passo 13 e 14 */}
-        <Rating rating={ rating } />
+      <div className="movie-card">
+        <section className="movie-card-body">
+          {/* Passo 7 */}
+          <img src={ imagePath } alt="" className="movie-card-image" />
+          {/* Passo 8 */}
+          <h4 className="movie-card-title">{title}</h4>
+          {/* Passo 9 */}
+          <h5 className="movie-card-subtitle">{subtitle}</h5>
+          {/* Passo 10 */}
+          <p className="movie-card-storyline">{storyline}</p>
+          {/* Passo 13 e 14 */}
+          <Rating rating={ rating } />
+        </section>
       </div>
     );
   }
