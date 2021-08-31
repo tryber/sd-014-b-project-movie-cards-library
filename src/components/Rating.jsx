@@ -1,5 +1,7 @@
 // Passo 11 e 12
 import React from 'react';
+// Passo Final de testes
+import propTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
@@ -9,5 +11,11 @@ class Rating extends React.Component {
     );
   }
 }
+
+// Passo Final de testes
+
+Rating.propTypes = {
+  rating: propTypes.number.isRequired,
+};
 
 export default Rating;

@@ -1,5 +1,9 @@
 // Passo 3
 import React from 'react';
+// Passo Final de testes
+import propTypes from 'prop-types';
+// Passo 13
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
@@ -23,5 +27,17 @@ class MovieCard extends React.Component {
     );
   }
 }
+
+// Passo final: Testes de shape
+
+MovieCard.propTypes = {
+  movie: propTypes.shape({
+    imagePath: propTypes.string,
+    title: propTypes.string,
+    subtitle: propTypes.string,
+    storyline: propTypes.string,
+    rating: propTypes.string,
+  }).isRequired,
+};
 
 export default MovieCard;
