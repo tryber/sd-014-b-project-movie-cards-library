@@ -3,11 +3,11 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
-    return(
+    return (
       <p>moviecard component</p>
     );
-  ;}
-};
+  }
+}
 
 MovieCard.propTypes = {
 

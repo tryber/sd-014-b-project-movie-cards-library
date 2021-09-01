@@ -4,6 +4,7 @@ import MovieList from './components/MovieList';
 import MovieCard from './components/MovieCard';
 import Header from './components/Header';
 import Rating from './components/Rating';
+import data from '../src/data';
 
 class App extends React.Component {
   render() {
@@ -14,8 +15,8 @@ class App extends React.Component {
         <MovieCard />
         <Rating />
       </div>
-    )
-  };
+    );
+  }
 }
 
 export default App;
