@@ -1,19 +1,16 @@
 import React from 'react';
-import './App.css';
 import MovieList from './components/MovieList';
-// import MovieCard from './components/MovieCard';
 import Header from './components/Header';
-import Rating from './components/Rating';
-import data from './data';
+import movies from './data';
+import './App.css';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <main className="App">
         <Header />
-        <MovieList movies={ data.movies } />
-        <Rating rating={ data.movies } />
-      </div>
+        <MovieList movies={movies} />
+      </main>
     );
   }
 }
