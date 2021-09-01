@@ -11,7 +11,7 @@ header h1 {
 }
 
 /* Movies list */
-#movies-list {
+.movies-list {
   background-color: rgb(129, 119, 119);
 }
 
