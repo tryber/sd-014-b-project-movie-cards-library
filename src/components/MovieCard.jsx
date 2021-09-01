@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { movie } = this.props;
+    const { 
+      movie: {title, subtitle, storyline, imagePath, rating} 
+    } = this.props;
 
     return (
       <section>
