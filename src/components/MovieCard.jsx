@@ -4,7 +4,7 @@ import '../App.css';
 
 class MovieCard extends React.Component {
   render() {
-    const { movies: { title, subtitle, storyline, imagePath } } = this.props;
+    const { movie: { title, subtitle, storyline, imagePath } } = this.props;
 
     return (
       <section className="movie-card">
@@ -20,7 +20,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.arrayOf(
+  movie: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       subtitle: PropTypes.string,
