@@ -37,7 +37,7 @@ describe('6 - Crie um componente `<MovieCard />`', () => {
 describe('7 - Renderize a imagem do filme dentro de uma tag `img`', () => {
   let wrapper;
   const movie = movies[0];
-  it.skip('Renderize a imagem do filme dentro de uma tag `img`', () => {
+  it('Renderize a imagem do filme dentro de uma tag `img`', () => {
     wrapper = shallow(<MovieCard movie={ movie } />);
     expect(wrapper.find('img').prop('src')).toEqual('images/movie_1');
   });
