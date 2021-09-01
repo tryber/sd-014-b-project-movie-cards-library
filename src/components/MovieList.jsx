@@ -1,12 +1,8 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 
-const MovieList = () => {
-  return(
-    <main>
-      <MovieCard/>
-    </main>
-  );
-}
+const MovieList = () => (
+  <MovieCard />
+);
 
 export default MovieList;
