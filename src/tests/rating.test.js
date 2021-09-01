@@ -55,7 +55,7 @@ describe('13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', (
 describe('14 - Passe como prop para o componente `<Rating/>` o atributo `rating`', () => {
   let wrapper;
   const movie = movies[0];
-  it.skip('Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
+  it('Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
     wrapper = mount(<MovieCard movie={ movie } />);
     const starRating = wrapper.find(Rating);
     expect(starRating.props().rating).toEqual(rating);
