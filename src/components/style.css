@@ -9,3 +9,13 @@ header {
 header h1 {
   margin: 0;
 }
+
+/* Movies list */
+#movies-list {
+  background-color: rgb(129, 119, 119);
+}
+
+/* Movie Card */
+.card {
+  background-color: rgb(221, 221, 221);
+}
