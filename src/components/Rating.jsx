@@ -1,20 +1,17 @@
 // implement Rating component here
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 
 class Rating extends Component {
   render() {
-    const { movies: { rating } } = this.props;
-    return (
-      <section>{ rating }</section>
-    );
+    const { rating } = this.props;
+    return <p className="bg-success w-25 text-white text-center rounded">{ rating }</p>;
   }
 }
 
 Rating.propTypes = {
-  movies: PropTypes.shape({
-    rating: PropTypes.number,
-  }).isRequired,
+  rating: PropTypes.number.isRequired,
 };
 
 export default Rating;
