@@ -1,39 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../App.css';
 
 class MovieCard extends React.Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props.movies;
+    const { movie: { title, subtitle, storyline, imagePath } } = this.props;
 
     return (
-      <section>
-        <p>
-          Título:
-          { title }
-        </p>
-        <p>
-          Subtítulo:
-          { subtitle }
-        </p>
-        <p>
-          Resenha:
-          { storyline }
-        </p>
-        <p>
-          Avaliação do Público:
-          { rating }
-        </p>
-        <p>
-          Poster do Filme:
-          <img src={ imagePath } alt={ `Imagem do filme ${title}` } />
-        </p>
+      <section className="movie-card">
+        <img className="movie-card-image" src={ imagePath } alt={ `Filme: ${title}` } />
+        <div className="movie-card-body">
+          <h4 className="movie-card-title">{ title }</h4>
+          <h5 className="movie-card-subtitle">{ subtitle }</h5>
+          <p className="movie-card-storyline">{ storyline }</p>
+        </div>
       </section>
     );
   }
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.arrayOf(
+  movie: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       subtitle: PropTypes.string,
