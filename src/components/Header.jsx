@@ -1,7 +1,8 @@
 import React from 'react';
 
 class Header extends React.Component {
-    render(){
+    render() {
+        <h1>Olá mundo!</h1>
     }
 }
 
