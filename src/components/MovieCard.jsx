@@ -6,11 +6,11 @@ class MovieCard extends React.Component {
     const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
       <div className="card">
+        <h4>{ imagePath }</h4>
         <h2>{ title }</h2>
         <h3>{ subtitle }</h3>
         <p>{ storyline }</p>
         <p>{ rating }</p>
-        <h4>{ imagePath }</h4>
       </div>
     );
   }

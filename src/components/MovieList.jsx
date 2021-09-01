@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
+
 
 class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
       <div>
-        { console.log(movies) }
+        { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
       </div>
 
     );
@@ -26,4 +28,10 @@ renderizamos
 desestruturamos movies e atribuimos a props
 retornamos um elemento pai
 ja aproveitei pra validar o movies e fazer o lint parar de reclamar
+
+Requisito 5:
+importar o movieCard dentro do movieList
+fazer o map para iterar
+em cada iteração adiciona uma key com o nome e 
+passa a props movie para cada filme(movie)
 */
