@@ -1,5 +1,5 @@
 // implement Header component here
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class Header extends Component {
   render() {
@@ -9,6 +9,6 @@ export default class Header extends Component {
           <h1>Movie Cards Library</h1>
         </header>
       </div>
-    )
+    );
   }
 }
