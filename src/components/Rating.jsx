@@ -7,7 +7,7 @@ class Rating extends Component {
   render() {
     const { rating } = this.props;
     return (
-      <p className="bg-success w-25 text-white text-center rounded rating">
+      <p className="rating">
         { rating }
       </p>
     );
@@ -15,7 +15,11 @@ class Rating extends Component {
 }
 
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
+};
+
+Rating.defaultProps = {
+  rating: 0,
 };
 
 export default Rating;
