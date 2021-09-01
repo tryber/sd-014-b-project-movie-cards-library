@@ -1,20 +1,21 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgb(177, 167, 166);
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: black;
   display: flex;
   height: 100px;
   justify-content: center;
 }
 
 .page-title {
-  color: #f8f9fa;
-  font-size: 28px;
+  color: white;
+  font-family: Monoton , cursive;
+  font-size: 50px;
   font-weight: 500;
   text-align: center;
 }
@@ -28,23 +29,25 @@ body {
 
 .movie-card {
   align-items: center;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: lightgrey;
+  border: 1px solid rgba(102, 7, 8);
   border-radius: 10px;
-  box-shadow: 10px 5px 10px grey;
+  box-shadow: 10px 5px 10px rgb(22, 26, 29);
   display: flex;
   flex-direction: column;
-  height: 450px;
+  height: 490px;
   margin: 5px;
   overflow: hidden;
-  width: 300px;
+  width: 350px;
 }
 
 .movie-card-image {
-  border: 5px solid black;
+  background-color: rgb(229, 56, 59);
+  border: 5px solid rgb(102, 7, 8);
   border-radius: 10px;
+  margin-top: 5px;
   padding: 5px;
-  width: 92%;
+  width: 90%;
 }
 
 .movie-card-body {
@@ -53,36 +56,45 @@ body {
 }
 
 .movie-card-title {
-  font-size: 24px;
+  color: rgb(102, 7, 8);
+  font-size: 35px;
   font-weight: 500;
   margin: 0 0 12px;
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
 }
 
 .movie-card-subtitle {
-  color: #6c757d;
-  font-size: 16px;
+  color: white;
+  font-size: 25px;
   font-weight: 500;
   margin: 0 0 8px;
+  text-align: center;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
 }
 
 .movie-card-storyline {
-  font-size: 14px;
+  font-size: 15px;
   text-align: justify;
 }
 
 .rating {
-  background-color: #007bff;
+  background-color: rgb(102, 7, 8);
   border-radius: 25px;
   color: white;
   font-size: 16px;
   font-weight: 700;
   margin-right: 10px;
   padding: 3px 9px;
+  text-align: center;
 }
 
 .movie-card-rating {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgb(229, 56, 59);
+  border-top: 1px solid rgb(102, 7, 8);
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
