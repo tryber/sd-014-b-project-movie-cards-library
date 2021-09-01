@@ -4,15 +4,12 @@ import Proptypes from 'prop-types';
 
 class Header extends React.Component {
   render() {
-    const { headerText } = this.props;
     return (
-      <header>{ headerText }</header>
+      <header>
+        <h1>Movie Cards Library</h1>
+      </header>
     );
   }
 }
-
-Header.propTypes = {
-  headerText: Proptypes.string.isRequired,
-};
 
 export default Header;
