@@ -1,10 +1,9 @@
 import React from 'react';
 
-
 class MovieList extends React.Component {
   render() {
     return (
-      <p> Teste </p>
+      <p> Teste</p>
     );
   }
 }
