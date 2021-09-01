@@ -81,3 +81,40 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
+.header {
+  background-color: #232e3e;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
+
+.text-title {
+  color: #febd69;
+}
+
+.container-card {
+  align-items: center;
+  background-color: #232f3e;
+  border: #37475a solid 1px;
+  border-radius: 5%;
+  color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.container-image {
+  width: 350px;
+}
+
+main {
+  background-color: #131a22;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+}
