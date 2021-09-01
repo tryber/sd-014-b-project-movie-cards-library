@@ -1,6 +1,6 @@
 // implement MovieCard component here
 import React, { Component } from 'react';
-import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+// import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 

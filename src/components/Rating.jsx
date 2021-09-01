@@ -1,7 +1,7 @@
 // implement Rating component here
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+// import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 
 class Rating extends Component {
   render() {
