@@ -3,7 +3,6 @@ import Data from './data';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import './App.css';
-import { render } from 'enzyme';
 
 function App() {
   render();
