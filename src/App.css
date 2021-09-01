@@ -1,7 +1,7 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 
 body {
@@ -27,8 +27,8 @@ body {
 
 .movie-list {
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
+  justify-content: center;
   padding: 48px 30px;
 }
 
@@ -68,6 +68,7 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
+  flex: 2;
   line-height: 1.7em;
 }
 
@@ -81,8 +82,8 @@ body {
 }
 
 .movie-card-rating {
-  margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.03);
+  margin-top: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
