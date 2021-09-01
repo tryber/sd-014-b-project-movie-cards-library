@@ -1,12 +1,12 @@
 // implement MovieCard component here
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
     // Desestruturação abaixo feita dessa forma por conta do lint
     // Estava - const { title, subtitle, storyline, rating, imagePath } = this.props.movie;
-    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
+    const { movie: { title, subtitle, storyline, imagePath } } = this.props;
     return (
       <section>
         <img src={ imagePath } alt={ `${title}` } />
@@ -19,10 +19,12 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  title: propTypes.string,
-  subtitle: propTypes.string,
-  storyline: propTypes.string,
-  imagePath: propTypes.string,
-}
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+  }).isRequired,
+};
 
 export default MovieCard;
