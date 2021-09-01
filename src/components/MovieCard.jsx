@@ -12,6 +12,7 @@ class MovieCard extends Component {
       <section>
         <img src={ imagePath } alt={ title } />
         <h4>{title}</h4>
+        <h5>{subtitle}</h5>
       </section>
     );
   }
