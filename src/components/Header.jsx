@@ -2,9 +2,13 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
+    const texto = 'Movie Cards Library';
+
     return (
       <header>
-        cabeçalho
+        <h1>
+          {texto}
+        </h1>
       </header>
     );
   }
