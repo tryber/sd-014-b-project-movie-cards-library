@@ -7,7 +7,7 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      <div className="movies-list">
+      <div className="movie-list">
         {movies
           .map((movie, index) => {
             const chave = `Movie Title ${index + 1}`;
