@@ -1,0 +1,10 @@
+.header {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header h1 {
+  display: none;
+}
