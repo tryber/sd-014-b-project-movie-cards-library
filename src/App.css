@@ -22,14 +22,16 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  padding: 48px 30px;
   justify-content: space-evenly;
+  padding: 48px 30px;
 }
 
 .movie-card {
+  align-items: center;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px grey;
   display: flex;
   flex-direction: column;
   height: 450px;
@@ -38,9 +40,11 @@ body {
   width: 300px;
 }
 
-
 .movie-card-image {
-  width: 100%;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  width: 92%;
 }
 
 .movie-card-body {
@@ -72,6 +76,7 @@ body {
   color: white;
   font-size: 16px;
   font-weight: 700;
+  margin-right: 10px;
   padding: 3px 9px;
 }
 
@@ -81,4 +86,5 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+  width: 100%;
 }
