@@ -1,16 +1,21 @@
 // implement MovieCard component here
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { movies } = this.props;
+    const { movie } = this.props;
 
     return (
       <section>
-        {movies}
+        {movie}
       </section>
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.arrayOf.isRequired,
+};
 
 export default MovieCard;
