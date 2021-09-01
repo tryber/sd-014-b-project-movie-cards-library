@@ -1,18 +1,14 @@
 import React from 'react';
 
 class Header extends React.Component {
-    render(){
-        return (
-            <header>
-                <h1>Movie Cards Library</h1>
+  render() {
+    return (
+      <header className="movie-card-header">
+        <h1>Movie Cards Library</h1>
 
-            </header>
-         )
-    }
+      </header>
+    );
+  }
 }
-Header.propTypes = {
-    // name: PropTypes.string,
-    // lastName: PropTypes.string,
-  };
 
 export default Header;
