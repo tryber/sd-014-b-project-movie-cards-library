@@ -5,7 +5,10 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      <div />
+      <div>
+        { console.log(movies) }
+      <div/>
+
     );
   }
 }
