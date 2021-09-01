@@ -46,7 +46,7 @@ describe('4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`', 
 
 describe('5 - Passe uma key para cada `<MovieCard />` renderizado', () => {
   let wrapper;
-  it.skip('Passe uma key para cada `<MovieCard />` renderizado', () => {
+  it('Passe uma key para cada `<MovieCard />` renderizado', () => {
     wrapper = mount(<MovieList movies={ movies } />);
     const movieCards = wrapper.find(MovieCard);
     movieCards.forEach((movieCard, index) => {
