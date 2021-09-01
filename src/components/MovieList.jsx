@@ -12,7 +12,7 @@ class MovieList extends React.Component {
           .map((movie, index) => {
             const chave = `Movie Title ${index + 1}`;
             return <MovieCard key={ chave } movie={ movie } />;
-          }, [])}
+          })}
       </div>
     );
   }
