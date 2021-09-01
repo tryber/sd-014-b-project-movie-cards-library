@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class Header extends React.Component {
   render() {
-    const title = 'Movie Cards Library';
+    const { title } = this.props;
     return (
       <header>
         <h1>{title}</h1>
