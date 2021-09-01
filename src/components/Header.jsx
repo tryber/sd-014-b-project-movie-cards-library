@@ -1,16 +1,15 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 
 class Header extends React.Component {
-  render(){
+  render() {
     return (
-      <header>
-        <h1>Movie Cards Library</h1>
-      </header>
-    )
+      <div>
+        <header>
+          <h1>Movie Cards Library</h1>
+        </header>
+      </div>
+    );
   }
 }
 
 export default Header;
-// Header.PropTypes = {  
-// }
