@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <Header />
       <MovieList movies={ Data } />
-      Hora de codar! 🚀✍️👨‍💻👩‍💻💪
     </div>
   );
 }
