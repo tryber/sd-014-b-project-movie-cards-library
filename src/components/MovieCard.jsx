@@ -4,7 +4,7 @@ class MovieCard extends React.Component {
   render() {
     return (
       <div>
-        
+        Card
       </div>
     );
   }
