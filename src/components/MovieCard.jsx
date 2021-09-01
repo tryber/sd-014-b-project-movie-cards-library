@@ -6,12 +6,12 @@ class MovieList extends React.Component {
     const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
       <section>
-        <p>
-          { title }
-          { subtitle }
-          { storyline }
+        <div>
+          <h4>{ title }</h4>
+          <h5>{ subtitle }</h5>
+          <p>{ storyline }</p>
           { rating }
-        </p>
+        </div>
         <img src={ imagePath } alt={ `magem do filme ${title}` } />
       </section>
     );
