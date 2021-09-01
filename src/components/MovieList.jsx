@@ -2,7 +2,7 @@ import React from 'react';
 
 class MovieList extends React.Component {
     render() {
-        const { title, subtitle, storyline, rating, imagePath } = this.props.movies 
+        const { title, subtitle, storyline, rating, imagePath } = this.props;
         return (
           <section>
             <p><strong>{ title }</strong>,
