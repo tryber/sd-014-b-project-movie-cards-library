@@ -5,7 +5,7 @@ import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    const { movieObject: {
+    const { movie: {
       title,
       subtitle,
       storyline,
@@ -26,7 +26,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movieObject: PropTypes.arrayOf(PropTypes.shape({
+  movie: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
