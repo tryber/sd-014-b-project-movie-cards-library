@@ -1,12 +1,12 @@
 import React from 'react';
 
 class Header extends React.Component {
-  render(){
+  render() {
     return (
       <header>
         <h1>Movie Cards Library</h1>
       </header>
-    )
+    );
   }
 }
 
