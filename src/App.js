@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      Hora de codar! 🚀✍️👨‍💻👩‍💻💪
     </div>
   );
 }
