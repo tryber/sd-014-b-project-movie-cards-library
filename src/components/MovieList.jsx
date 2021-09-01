@@ -1,8 +1,14 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 export default function () {
   return (
-    <p>Teste</p>
+    function MovieList() {
+      return (
+        <div className="MovieList">
+          <MovieCard />
+        </div>
+      );
+    }
   );
 }
