@@ -12,6 +12,10 @@ body {
   justify-content: center;
 }
 
+.movie-card-header h1 {
+  display: none;
+}
+
 .page-title {
   color: #f8f9fa;
   font-size: 28px;
