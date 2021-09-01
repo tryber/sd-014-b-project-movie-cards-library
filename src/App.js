@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import MovieCard from './components/MovieCard';
+import MovieList from './components/MovieList';
 import Data from './data';
 
 function App() {
   return (
     <div className="App">
-      <MovieCard movie={ Data } />
+      <MovieList movies={ Data } />
     </div>
   );
 }
