@@ -46,7 +46,7 @@ describe('7 - Renderize a imagem do filme dentro de uma tag `img`', () => {
 describe('8 - Renderize o título do filme dentro de uma tag `h4`', () => {
   let wrapper;
   const movie = movies[0];
-  it.skip('Renderize o título do filme dentro de uma tag `h4`', () => {
+  it('Renderize o título do filme dentro de uma tag `h4`', () => {
     wrapper = shallow(<MovieCard movie={ movie } />);
     expect(wrapper.find('h4').text()).toBe('Movie Title 1');
   });
