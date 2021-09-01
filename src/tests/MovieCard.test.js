@@ -64,7 +64,7 @@ describe('9 - Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
 describe('10 - Renderize a sinopse do filme dentro de uma tag `p`', () => {
   let wrapper;
   const movie = movies[0];
-  it.skip('Renderize a sinopse do filme dentro de uma tag `p`', () => {
+  it('Renderize a sinopse do filme dentro de uma tag `p`', () => {
     wrapper = shallow(<MovieCard movie={ movie } />);
     expect(wrapper.find('p').text()).toBe('Movie Storyline 1');
   });
