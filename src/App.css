@@ -83,38 +83,38 @@ body {
 }
 
 .header {
-  background-color: #232F3E;
+  background-color: #232e3e;
   display: flex;
   height: 80px;
   justify-content: center;
 }
 
 .text-title {
-  color: #FEBD69;
+  color: #febd69;
 }
 
 .container-card {
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  border: #37475A solid 1px;
+  background-color: #232f3e;
+  border: #37475a solid 1px;
   border-radius: 5%;
-  padding: 20px;
+  color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
   margin-top: 50px;
   max-width: 400px;
-  background-color: #232F3E;
-  color: #f8f9fa;
+  padding: 20px;
 }
 
-.container-image{
+.container-image {
   width: 350px;
 }
 
 main {
-  background-color: #131A22;
+  background-color: #131a22;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
-  flex-wrap: wrap;
   width: 100%;
 }
