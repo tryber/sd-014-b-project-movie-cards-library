@@ -1,15 +1,15 @@
-// implement Rating component here
+// implement ratin component here
 import React from 'react';
 import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
-    const { avaliation } = this.props;
-    return <p>{avaliation}</p>;
+    const { rating } = this.props;
+    return <p>{rating}</p>;
   }
 }
 
 Rating.propTypes = {
-  avaliation: PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired,
 };
 export default Rating;
