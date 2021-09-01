@@ -30,7 +30,7 @@ const movies = [
 ];
 
 describe('11 - Crie um componente `<Rating />`', () => {
-  it.skip('Renderize o componente `<Rating />`', () => {
+  it('Renderize o componente `<Rating />`', () => {
     shallow(<Rating />);
   });
 });
