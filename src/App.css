@@ -81,3 +81,40 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  background-color: #232F3E;
+}
+
+.text-title {
+  color: #FEBD69;
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: #37475A solid 1px;
+  border-radius: 5%;
+  margin-top: 50px;
+  max-width: 400px;
+  background-color: #232F3E;
+  color: #f8f9fa;
+}
+
+.container-image{
+  width: 350px;
+}
+
+main {
+  background-color: #131A22;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 100%;
+}
