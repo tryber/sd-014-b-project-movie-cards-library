@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: whitesmoke;
   box-sizing: border-box;
@@ -22,6 +28,7 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding: 48px 30px;
 }
 
@@ -37,20 +44,19 @@ body {
   width: 300px;
 }
 
-
 .movie-card-image {
   width: 100%;
 }
 
 .movie-card-body {
-  flex: 1 1 auto;
+  flex: 2 1 auto;
   padding: 20px;
 }
 
 .movie-card-title {
   font-size: 24px;
   font-weight: 500;
-  margin: 0 0 12px;
+  margin: 20px 0 10px;
 }
 
 .movie-card-subtitle {
@@ -61,8 +67,9 @@ body {
 }
 
 .movie-card-storyline {
+  flex: 2;
   font-size: 14px;
-  text-align: justify;
+  line-height: 1.7em;
 }
 
 .rating {
@@ -79,5 +86,6 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
+  margin-top: 20px;
   padding: 12px 20px;
 }
