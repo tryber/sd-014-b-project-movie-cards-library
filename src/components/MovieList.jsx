@@ -2,19 +2,14 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-// const arrayofMovies = ['x', 'c', 'v', 'x']; // ????
-
-// movies.map((movie) => <MovieCard />)
-
+const mapAndRender = (arr) => arr.map((element) => <MovieCard movies={element} key={element.title} />)
 class MovieList extends React.Component {
   render() {
-  const { movies } = this.props.movies;
+  const { movies, title } = this.props;
 
     return (
       <main>
-        <MovieCard />  
-        <MovieCard />
-        <MovieCard />
+        {mapAndRender(movies)}
       </main>
     );
   }
