@@ -13,7 +13,7 @@ class MovieList extends React.Component {
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.objectOf(propTypes.string)).isRequired,
+  movies: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
 };
 
 export default MovieList;
