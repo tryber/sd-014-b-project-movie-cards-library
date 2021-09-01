@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList movies={ movies }/>
-      {/*movies.map((movie) => <MovieList key={ movie.title } filme={ movie } />)*/}
+      <MovieList movies={ movies } />
+      {/* movies.map((movie) => <MovieList key={ movie.title } filme={ movie } />) */}
     </div>
   );
 }
