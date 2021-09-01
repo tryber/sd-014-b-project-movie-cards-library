@@ -6,7 +6,7 @@ class Header extends React.Component {
     const { frase } = this.props;
     return (
       <header>
-        <p>{ frase }</p>
+        <h1>{ frase }</h1>
       </header>
     );
   }
