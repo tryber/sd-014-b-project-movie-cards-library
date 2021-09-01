@@ -1,17 +1,13 @@
 import React from 'react';
 import './App.css';
 import MovieList from './components/MovieList';
-import movies from './data';
+import Header from './components/Header';
 
-function App() {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <MovieList movies={movies} />
-      </div>
-    );
-  }
+export default function App() {
+  return (
+    <div className="App">
+      <Header />
+      <MovieList />
+    </div>
+  );
 }
-
-export default App;
