@@ -21,6 +21,7 @@ class MovieCard extends React.Component {
   }
 }
 
+// Dúvida em relação a escrita dos propTypes sanada na thread do Slack do aluno Esdras Oliveira, onde ele mostrou seu código.
 MovieCard.propTypes = {
   title: PropTypes.String,
   subtitle: PropTypes.String,
