@@ -13,7 +13,7 @@ describe('15 - Crie um componente `<App />`', () => {
 
 describe('16 - Renderize `<MovieList />` dentro do componente `<App />`', () => {
   let wrapper;
-  it.skip('Renderize `<MovieList />` dentro do componente `<App />`', () => {
+  it('Renderize `<MovieList />` dentro do componente `<App />`', () => {
     wrapper = shallow(<App />);
     expect(wrapper.find('MovieList').length).toEqual(1);
   });
