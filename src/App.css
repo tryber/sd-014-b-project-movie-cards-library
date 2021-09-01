@@ -78,6 +78,6 @@ body {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 12px 20px;
 }
