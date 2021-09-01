@@ -51,6 +51,8 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
+  display: flex;
+  justify-content: center;
 }
 
 .movie-card-subtitle {
@@ -80,4 +82,31 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.headerr {
+  display: flex;
+  justify-content: center;
+}
+
+.list-filmes {
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cada-card {
+  display: flex;
+  border: 1px solid black;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 36.3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cada-card h5 {
+  margin-left: 7px;
+  font: italic;
 }
