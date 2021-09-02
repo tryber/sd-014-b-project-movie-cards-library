@@ -34,6 +34,7 @@ const movies = [
     rating: 4.2,
     imagePath: 'images/Resident_Evil_Vendetta.jpg',
   },
+  
 ];
 
 export default movies;
