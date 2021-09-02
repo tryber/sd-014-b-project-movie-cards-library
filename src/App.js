@@ -1,15 +1,16 @@
 import React from 'react';
-import Data from './data';
+import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-import './App.css';
+import movies from './data';
 
 function App() {
   return (
     <div className="App">
-      <App />
       <Header />
-      <MovieList movies={ Data } />
+      <section className="Movie-List">
+        <MovieList movies={ movies } />
+      </section>
     </div>
   );
 }
