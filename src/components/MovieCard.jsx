@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Rating from './Rating';
 import '../App.css';
 
-class MovieCards extends React.Component {
+class MovieCard extends React.Component {
   render() {
     const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
@@ -18,7 +18,7 @@ class MovieCards extends React.Component {
   }
 }
 
-MovieCards.propTypes = {
+MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
@@ -28,7 +28,7 @@ MovieCards.propTypes = {
   }),
 };
 
-MovieCards.defaultProps = {
+MovieCard.defaultProps = {
   movie: PropTypes.shape({
     title: 'No name',
     subtitle: 'No subtitle',
@@ -38,4 +38,4 @@ MovieCards.defaultProps = {
   }),
 };
 
-export default MovieCards;
+export default MovieCard;

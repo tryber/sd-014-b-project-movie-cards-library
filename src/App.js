@@ -9,11 +9,7 @@ function App() {
   return (
     <main>
       <Header />
-      { movies.map((movie) => (
-        <article key={ movie.title }>
-          <MovieList movieInfo={ movie } />
-        </article>
-      )) }
+      <MovieList movies={ movies } />
     </main>
   );
 }
