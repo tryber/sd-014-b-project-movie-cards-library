@@ -26,6 +26,7 @@ class MovieList extends Component {
 // };
 
 MovieList.propTypes = {
+  // eslint-disable-next-line react/require-default-props
   movies: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -34,7 +35,7 @@ MovieList.propTypes = {
       rating: PropTypes.number,
       imagePath: PropTypes.string,
     }),
-  ).isRequired,
+  ),
 };
 
 export default MovieList;
