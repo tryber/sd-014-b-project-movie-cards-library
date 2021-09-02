@@ -1,5 +1,5 @@
 import './App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import movies from './data';
