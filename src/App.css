@@ -27,7 +27,7 @@ body {
 
 .movie-card {
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 2px solid red;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -62,6 +62,7 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
+  margin-top: auto;
   text-align: justify;
 }
 
@@ -76,8 +77,13 @@ body {
 
 .movie-card-rating {
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 1px solid red;
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.strong {
+  color: red;
+  margin: auto;
 }
