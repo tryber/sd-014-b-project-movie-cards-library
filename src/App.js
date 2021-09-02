@@ -9,7 +9,7 @@ function App() {
     <main className="body">
       <Header />
       <section className="movie-list">
-        <MovieList movie={ moviesData } />
+        <MovieList movies={ moviesData } />
       </section>
     </main>
   );
