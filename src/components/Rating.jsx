@@ -1,14 +1,17 @@
 import React from 'react';
-import Data from '../data';
+import PropTypes from 'prop-types';
 
-export default () => {
-  function getRating() {
-    return Data
-      .map((valor) => <p key={ valor.title } className="rating">{ valor.rating }</p>);
+export default class Rating extends React.Component {
+  render() {
+    const { rating } = this.props;
+    return (
+      <div className="movie-card-rating">
+        <p className="rating">{ rating }</p>
+      </div>
+    );
   }
-  return (
-    <div>
-      {getRating()}
-    </div>
-  );
+}
+
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired,
 };
