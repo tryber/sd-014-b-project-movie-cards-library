@@ -6,7 +6,7 @@ class MovieCard extends React.Component {
     const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
       <div className="card">
-        <h4>{ imagePath }</h4>
+        <img src ={ imagePath } alt= { title }/>
         <h2>{ title }</h2>
         <h3>{ subtitle }</h3>
         <p>{ storyline }</p>
@@ -44,4 +44,7 @@ componente.propTypes recebe um obj por isso das {}
 que recebe outro obj o movie, esse porém tem o formato(shape)
 de acordo com a linha 22 até 27. assim validando a desestruturação.
 e fazendo o lint parar de chorar
+linha 9: para importar a imagem corretamente incluimos a tag img e
+passamos o caminho relativo { imagepath } que vai cair lá no doc do objeto
+onde tem o link da imagem, o texto alternativo faz referência ao título.
 */
