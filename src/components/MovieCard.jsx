@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 // O destructuring foi feito com ajuda do código do Israel Nazareth (https://github.com/tryber/sd-014-b-project-movie-cards-library/commit/98be82cbd63373feec1437df7d52d210267303d2)
 
@@ -16,7 +17,7 @@ class MovieCard extends React.Component {
         <h5>{subtitle}</h5>
         <img src={ imagePath } alt={ `Imagem do filme ${title}` } />
         <p>{storyline}</p>
-        <h3>{rating}</h3>
+        <Rating rating={ rating } />
       </div>
     );
   }
