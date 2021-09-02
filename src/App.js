@@ -6,11 +6,11 @@ import movies from './data';
 
 class App extends React.Component {
   render() {
-    return(
-      <div>
+    return (
+      <body>
         <Header />
-        <MovieList movies={movies}/>
-      </div>
+        <MovieList movies={ movies }/>
+      </body>
     );
   }
 }
