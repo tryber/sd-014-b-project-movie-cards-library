@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import movies from '../data';
 // Por que não precisa de .js depois de data?
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends Component {
@@ -25,17 +25,16 @@ class MovieList extends Component {
 //   }).isRequired,
 // };
 
-MovieList.propTypes = {
-  // eslint-disable-next-line react/require-default-props
-  movies: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      subtitle: PropTypes.string,
-      storyline: PropTypes.string,
-      rating: PropTypes.number,
-      imagePath: PropTypes.string,
-    }),
-  ).isRequired,
-};
+// MovieList.propTypes = {
+//   movies: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       title: PropTypes.string,
+//       subtitle: PropTypes.string,
+//       storyline: PropTypes.string,
+//       imagePath: PropTypes.string,
+//       rating: PropTypes.number,
+//     }),
+//   ).isRequired,
+// };
 
 export default MovieList;
