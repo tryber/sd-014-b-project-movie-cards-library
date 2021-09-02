@@ -5,7 +5,9 @@ class Rating extends React.Component {
   render() {
     const { rating } = this.props;
     return (
-      <rating />
+      <section>
+        <p>{rating}</p>
+      </section>
     );
   }
 }
