@@ -1,0 +1,2 @@
+já havia feito o projeto um dia antes para treinar
+https://github.com/brenoMatias/trybe-exercises/tree/project-movie-cards/block11-react-introduction/movie-library/src

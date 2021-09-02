@@ -8,7 +8,7 @@ class MovieCard extends React.Component { // component estilo class
 
     return (
       <div className="movie">
-        <img src={ imagePath } alt="test"/>
+        <img src={ imagePath } alt="test" />
         <h4> { title } </h4>
         <h5> { subtitle } </h5>
         <p> { storyline } </p>
