@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
-class MovieList extends React.Component {
+class MovieCard extends React.Component {
   render() {
     const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
@@ -13,22 +13,20 @@ class MovieList extends React.Component {
           <p>{ storyline }</p>
           <Rating rating={ rating } />
         </div>
-        <img src={ imagePath } alt={ `magem do filme ${title}` } />
+        <img src={ imagePath } alt={ `imagem do filme ${title}` } />
       </section>
     );
   }
 }
 
-MovieList.propTypes = {
-  movie: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      subtitle: PropTypes.string,
-      storyline: PropTypes.string,
-      rating: PropTypes.number,
-      imagePath: PropTypes.string,
-    }),
-  ).isRequired,
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }).isRequired,
 };
 
-export default MovieList;
+export default MovieCard;
