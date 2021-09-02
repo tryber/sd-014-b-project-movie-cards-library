@@ -5,8 +5,8 @@ class Header extends React.Component {
   render() {
     const { title } = this.props;
     return (
-      <header>
-        <h1>{title}</h1>
+      <header className="movie-card-header">
+        <h1 className="page-title">{title}</h1>
       </header>
     );
   }
