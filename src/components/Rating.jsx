@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import movies from '../data';
 
 class Rating extends React.Component {
   render() {
-    return <div className="rating">{movies.rating}</div>;
+    const { rating } = this.props;
+    return <div className="rating">{rating}</div>;
   }
 }
 
