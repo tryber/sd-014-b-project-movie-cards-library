@@ -10,7 +10,6 @@ function App() {
       {}
       <Header />
       <MovieList movies={ movies } />
-      <Rating />
     </div>
   );
 }
