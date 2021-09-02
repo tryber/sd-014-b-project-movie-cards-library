@@ -10,6 +10,7 @@ class MovieList extends React.Component {
     );
   }
 }
+// Bugfix com ajuda do Thomas Ferreira Turma 14-Bis
 
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object).isRequired,
