@@ -9,7 +9,7 @@ class MovieCard extends React.Component { // component estilo class
 
     return (
       <section className="movie">
-        <img alt={ `Movie ${title}` } src={ imagePath } />
+        <img alt={ { title } } src={ imagePath } />
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
