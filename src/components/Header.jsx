@@ -1,11 +1,17 @@
 import React from 'react';
 
-const Header = () => (
-  <div className="header">
-    <h1>
-      Movie Cards Library
-    </h1>
-  </div>
-);
+class Header extends React.Component {
+  render() {
+    let text = 'Movie Cards Library';
+
+    return (
+      <header>
+        <h1>
+          { text }
+        </h1>
+      </header>
+    );
+  };
+};
 
 export default Header;
