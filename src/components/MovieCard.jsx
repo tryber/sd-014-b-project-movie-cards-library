@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    // eslint-disable-next-line react/prop-types
-    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
+    const { movies: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
       <div className="moviecard">
         <div>

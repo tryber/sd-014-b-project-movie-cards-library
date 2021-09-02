@@ -1,5 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// Requisito 4 - Renderize componentes <MovieCard /> dentro de <MovieList />
+// <MovieList /> deve renderizar um componente <MovieCard /> para cada objeto contido no array recebido na prop movies.
+// O que será verificado:
+// Renderize componentes <MovieCard /> dentro de MovieList.
+
 import MovieCard from './MovieCard';
 
 // Requsito 3 - Crie um componente <MovieList />
