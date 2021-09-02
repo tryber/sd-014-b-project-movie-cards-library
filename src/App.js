@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
+import PropTypes from 'prop-types';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import movies from './data';
-import PropTypes from 'prop-types';
 
 function App() {
   return (
@@ -22,8 +22,8 @@ MovieList.propTypes = {
       storyline: PropTypes.string,
       imagePath: PropTypes.string,
       rating: PropTypes.number,
-    }).isRequired
-  )
-}
+    }).isRequired,
+  ),
+};
 
 export default App;
