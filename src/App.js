@@ -5,9 +5,9 @@ import MovieList from './components/MovieList';
 import './App.css';
 
 function App() {
-  render();
   return (
     <div className="App">
+      <App />
       <Header />
       <MovieList movies={ Data } />
     </div>
