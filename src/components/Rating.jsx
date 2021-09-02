@@ -9,8 +9,8 @@ class Rating extends React.Component {
     return (
       <section className="movie-card-rating">
         <p className="rating">
-        {rating}
-      </p>
+          {rating}
+        </p>
       </section>
     );
   }
