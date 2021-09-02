@@ -21,6 +21,8 @@ Rating.defaultProps = {
   rating: 0,
 };
 
+export default Rating;
+
 /*
 Começo padrão, importar react e proptype
 criar a classe de componente rating
