@@ -1,14 +1,10 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 
-export default function () {
+export default function MOvieList() {
   return (
-    function MovieList() {
-      return (
-        <div className="MovieList">
-          <MovieCard />
-        </div>
-      );
-    }
+    <div className="MovieList">
+      <MovieCard />
+    </div>
   );
 }
