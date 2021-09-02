@@ -4,7 +4,7 @@ import Data from '../data';
 export default () => {
   function getRating() {
     return Data
-      .map((valor) => <p key={ indexOf(valor) } className="rating">{ valor.rating }</p>);
+      .map((valor) => <p key={ valor.title } className="rating">{ valor.rating }</p>);
   }
   return (
     <div>
