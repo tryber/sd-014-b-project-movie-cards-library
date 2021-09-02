@@ -8,7 +8,7 @@ class MovieList extends React.Component {
     return (
       <main>
         { filmes.map((filme) => (
-          <MovieCard key={ filme.title } subtitle={ filme.subtitle } />
+          <MovieCard key={ filme.title } subtitle={ filme.subtitle } storyline={ filme.storyline } rating={ filme.rating } imagePath={ filme.imagePath } />
         ))}
       </main>
     );
@@ -20,6 +20,9 @@ MovieList.propTypes = {
     PropTypes.shape({
       title: PropTypes.string,
       subtitle: PropTypes.string,
+      storyline: PropTypes.string,
+      rating: PropTypes.string,
+      imagePath: PropTypes.string,
     }),
   ).isRequired,
 };
