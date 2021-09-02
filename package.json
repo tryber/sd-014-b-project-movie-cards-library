@@ -5,9 +5,10 @@
   "dependencies": {
     "acorn": ">=7.1.1",
     "minimist": ">=1.2.3",
+    "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^1.1.5",
     "serialize-javascript": ">=2.1.1"
   },
   "scripts": {
