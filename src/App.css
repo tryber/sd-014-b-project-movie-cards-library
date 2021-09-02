@@ -27,7 +27,6 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  /* justify-content: center; */
   padding: 30px 80px;
 }
 
