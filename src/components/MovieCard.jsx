@@ -5,12 +5,12 @@ import Rating from './Rating';
 class MovieCard extends React.Component {
   render() {
     const {
-      movie: { title, subtitle, storyline, rating, imagePath}
+      movie: { title, subtitle, storyline, rating, imagePath },
     } = this.props;
 
     return (
       <section>
-        <img src={ imagePath } />
+        <img src={ imagePath } alt={ title } />
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
@@ -20,12 +20,20 @@ class MovieCard extends React.Component {
   }
 }
 
+/**
+ * Consultei o repositorio do colega Adilson
+ * para tirar uma duvida de como utilizar o PropTypes
+ * nessa parte de maneira correta (sem que eslint reclamasse)
+ * Link: https://github.com/tryber/sd-014-b-project-movie-cards-library/blob/adilsongb-project-movie-cards-library/src/components/MovieCard.jsx
+ */
 MovieCard.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  storyline: PropTypes.string,
-  rating: PropTypes.number,
-  imagePath: PropTypes.string,
-}
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }).isRequired,
+};
 
 export default MovieCard;
