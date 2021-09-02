@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
@@ -7,10 +8,12 @@ class MovieCard extends React.Component {
     return (
       <div className="card">
         <img src={ imagePath } alt={ title } />
-        <h4>{ title }</h4>
-        <h5>{ subtitle }</h5>
-        <p>{ storyline }</p>
-        <span>{ rating }</span>
+        <div>
+          <h4>{ title }</h4>
+          <h5>{ subtitle }</h5>
+          <p>{ storyline }</p>
+        </div>
+        <Rating rating={ rating } />
       </div>
     );
   }
@@ -49,4 +52,8 @@ passamos o caminho relativo { imagepath } que vai cair lá no doc do objeto
 onde tem o link da imagem, o texto alternativo faz referência ao título.
 alterados as tags do title, subtitle, story, e rating para
 bater com os requisitos
+Importar o rating;
+chamar o componente rating 
+passar a props rating com o conteúdo de rating que foi desestruturado
+fazendo referência ao objeto base
 */
