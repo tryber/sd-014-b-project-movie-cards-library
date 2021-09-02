@@ -8,7 +8,7 @@ class MovieList extends React.Component {
     const { movies } = this.props;
     return (
       <section className="movie-list">
-        { movies.map((movie) => <MovieCard key={ movie.title } movies={ movie } />) }
+        { movies.map((film) => <MovieCard key={ film.title } movie={ film } />) }
       </section>
     );
   }
