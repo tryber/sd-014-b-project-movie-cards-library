@@ -6,11 +6,17 @@ import Data from '../data';
 export default () => {
   function getImages() {
     return Data
-      .map((image) => <img key={ indexOf(image) } src={ image.imagePath } alt="" />);
+      .map((image) => (
+        <>
+          <h4>{ image.title }</h4>
+          <h5>{ image.subtitle }</h5>
+          <p>{ image.storyline }</p>
+          <img key={ indexOf(image) } src={ image.imagePath } alt="" />
+        </>
+      ));
   }
   return (
     <div className="rating">
-      <p>MovieCard</p>
       {getImages()}
       <Rating />
     </div>
