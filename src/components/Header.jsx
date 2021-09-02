@@ -4,7 +4,6 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <Header />
         <h1>Movie Cards Library</h1>
       </header>
     );
