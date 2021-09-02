@@ -20,15 +20,19 @@ class MovieCard extends React.Component { // component estilo class
   }
 }
 
-MovieCard.propTypes = { // definição dos proptypes
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.number,
-  imagePath: PropTypes.string,
-  rating: PropTypes.number,
-}.isRequired;
+MovieCard.propTypes = { // define os tipos de entrada das propriedades nos componentes
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  }).isRequired,
+};
 
 export default MovieCard;
 
 // linha 9: define a propriedade do componente com o nome movie
 // os valores dessa prop serão atrelados ao data.js (o que queremos pegar dos dados)
+// 'movie'é o nome da prop que definimos que será usada em outro codigo (e receberá parametro)
+// linha 17 usa o component(bloco de código importado)
