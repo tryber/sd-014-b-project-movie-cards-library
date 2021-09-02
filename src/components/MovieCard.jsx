@@ -53,7 +53,7 @@ onde tem o link da imagem, o texto alternativo faz referência ao título.
 alterados as tags do title, subtitle, story, e rating para
 bater com os requisitos
 Importar o rating;
-chamar o componente rating 
+chamar o componente rating
 passar a props rating com o conteúdo de rating que foi desestruturado
 fazendo referência ao objeto base
 */
