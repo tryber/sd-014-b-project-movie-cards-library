@@ -5,10 +5,13 @@ import PropTypes from 'prop-types';
 class MovieCard extends Component {
   render() {
     const {
-      movie: { imagePath },
+      movie: { storyline, subtitle, title, imagePath },
     } = this.props;
     return (
       <div>
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
+        <p>{ storyline }</p>
         <img src={ imagePath } alt="imagem" />
       </div>
     );
