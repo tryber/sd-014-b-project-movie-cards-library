@@ -7,10 +7,10 @@ class MovieCard extends React.Component {
     return (
       <div className="card">
         <img src={ imagePath } alt={ title } />
-        <h2>{ title }</h2>
-        <h3>{ subtitle }</h3>
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
-        <p>{ rating }</p>
+        <span>{ rating }</span>
       </div>
     );
   }
@@ -47,4 +47,6 @@ e fazendo o lint parar de chorar
 linha 9: para importar a imagem corretamente incluimos a tag img e
 passamos o caminho relativo { imagepath } que vai cair lá no doc do objeto
 onde tem o link da imagem, o texto alternativo faz referência ao título.
+alterados as tags do title, subtitle, story, e rating para
+bater com os requisitos
 */
