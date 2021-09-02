@@ -1,6 +1,6 @@
 // implement Rating component here
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 
 
 class Rating extends Component {
