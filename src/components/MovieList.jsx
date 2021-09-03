@@ -25,6 +25,6 @@ MovieList.propTypes = {
       imagePath: PropTypes.string,
     })
   ).isRequired,
-}
+};
 
 export default MovieList;
