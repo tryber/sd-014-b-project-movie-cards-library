@@ -29,6 +29,7 @@ body {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   height: 450px;
@@ -39,7 +40,7 @@ body {
 
 
 .movie-card-image {
-  width: 100%;
+  width: 90%;
 }
 
 .movie-card-body {
@@ -78,6 +79,7 @@ body {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 12px 20px;
+  margin-top: auto;
 }
