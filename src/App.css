@@ -43,7 +43,10 @@ body {
 }
 
 .movie-card-body {
+  display: flex;
   flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 20px;
 }
 
@@ -81,3 +84,4 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
