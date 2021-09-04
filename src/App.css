@@ -31,7 +31,8 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  height: 450px;
+  height: 400px;
+  padding: 20px;
   margin: 5px;
   overflow: hidden;
   width: 300px;
@@ -79,5 +80,6 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
+  margin-top: auto;
   padding: 12px 20px;
 }
