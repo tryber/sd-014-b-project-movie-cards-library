@@ -5,12 +5,20 @@ import PropTypes from 'prop-types';
 class Rating extends React.Component {
   render() {
     const { rating } = this.props;
-    return (<h1 className="rating">{ rating }</h1>);
+    return (
+      <div className="movie-card-rating" data-testid="rating">
+        <span className="rating">{rating}</span>
+      </div>
+    );
   }
 }
 
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
+};
+
+Rating.defaultProps = {
+  rating: 'undefined',
 };
 
 export default Rating;
