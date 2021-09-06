@@ -8,9 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      { movies.map((movie) => (
-        <MovieList movies={ movie }/>
-      ))}
+      <MovieList movies={ movies } />
     </div>
   );
 }
