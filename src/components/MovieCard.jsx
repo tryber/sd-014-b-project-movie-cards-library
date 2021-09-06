@@ -11,7 +11,7 @@ class MovieCard extends React.Component {
       <section>
         <h4>{title}</h4>
         <h5>{subtitle}</h5>
-        <h4>{storyline}</h4>
+        <p>{storyline}</p>
         <p>{rating}</p>
         <img src={ imagePath } alt={ title } />
       </section>
