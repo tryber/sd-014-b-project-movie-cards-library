@@ -7,10 +7,12 @@ import movies from './data';
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <MovieList movies={ movies } />
-      </div>
+      <body className="body">
+        <div className="App">
+          <Header />
+          <MovieList movies={ movies } />
+        </div>
+      </body>
     );
   }
 }
