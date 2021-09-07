@@ -1,1 +1,0 @@
-// implement Rating component here
