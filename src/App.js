@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 
+
 function App() {
   return (
-    <div className="App">
+    <h1 className="App">
       {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
-      Hora de codar! 🚀✍️👨‍💻👩‍💻💪
-    </div>
+      Hello World! 🚀✍️👨‍💻👩‍💻💪
+      <p >Meu primeiro app React</p>
+    </h1>
   );
 }
 
