@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
-//referência no código de amigos para a destruturação
+// referência no código de amigos para a destruturação
 class MovieCard extends React.Component {
   render() {
     const { movie: { title, subtitle, rating, storyline, imagePath } } = this.props;
