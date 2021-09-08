@@ -44,7 +44,9 @@ body {
 
 .movie-card-body {
   flex: 1 1 auto;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 .movie-card-title {
@@ -80,4 +82,5 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+  z-index: 1;
 }
