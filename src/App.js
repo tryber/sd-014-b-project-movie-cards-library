@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-
+import Header from './components/Header';
 
 function App() {
   return (
     <h1 className="App">
-      {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
-      Hello World! 🚀✍️👨‍💻👩‍💻💪
-      <p >Meu primeiro app React</p>
+      <Header />
     </h1>
   );
 }
