@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Moviecard extends React.Component {
   render() {
@@ -14,4 +15,12 @@ class Moviecard extends React.Component {
     );
   }
 }
+
+Moviecard.propTypes = {
+  imagePath: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  storyline: PropTypes.string,
+}.isRequired;
+
 export default Moviecard;

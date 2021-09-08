@@ -1,5 +1,6 @@
 import React from 'react';
 import Moviecard from './MovieCard';
+import movies from '../data';
 
 class Movielist extends React.Components {
   render() {
