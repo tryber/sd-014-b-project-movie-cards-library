@@ -21,9 +21,11 @@ MovieList.propTypes = {
     subtitle: PropTypes.string,
     imagePath: PropTypes.string,
     storyline: PropTypes.string,
+    rating: PropTypes.number,
   }).isRequired),
 };
 
+// documentação consultada https://stackoverflow.com/questions/32325912/react-proptype-array-with-shape
 MovieList.defaultProps = {
   movies: [],
 };

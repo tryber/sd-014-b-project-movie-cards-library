@@ -31,6 +31,7 @@ MovieCard.propTypes = {
   }).isRequired),
 };
 
+// documentação consultada https://stackoverflow.com/questions/32325912/react-proptype-array-with-shape
 MovieCard.defaultProps = {
   movie: [],
 };
