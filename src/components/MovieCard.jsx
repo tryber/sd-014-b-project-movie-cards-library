@@ -3,9 +3,10 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
+    const { title } = this.props.card;
     return (
       <header>
-        <h1>Movie Cards Library</h1>
+        <h1>{ title }</h1>
       </header>
     );
   }
