@@ -8,6 +8,7 @@ class MovieCard extends Component {
     const { movie: {
       title, subtitle, storyline, imagePath, rating,
     } } = this.props;
+    console.log(this);
     return (
       <div className="movie-card">
         <img className="movie-card-image" src={ imagePath } alt={ title } />
