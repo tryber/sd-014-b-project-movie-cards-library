@@ -1,19 +1,19 @@
 import React from 'react';
-import propTypes from 'prop-types';
-import Rating from './Rating';
-import ButtonWatch from './ButtonWatch';
+import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
+    const { movies } = this.props;
     return (
       <div className="Movie-list">
-        {MovieList.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
+        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
       </div>
     );
   }
 }
 
-MovieList.PropTypes = {
+MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
@@ -21,11 +21,7 @@ MovieList.PropTypes = {
     rating: PropTypes.number,
     imagepath: PropTypes.string,
     link: PropTypes.string,
-  })),
-};
-
-MovieList.defaultProps = {
-  movies: [],
+  })).isRequired,
 };
 
 export default MovieList;

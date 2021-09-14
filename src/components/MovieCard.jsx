@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import ButtonWatch from './ButtonWatch';
 import Rating from './Rating';
 
@@ -26,3 +26,20 @@ class MovieCard extends React.Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+    link: PropTypes.string,
+  }),
+};
+
+MovieCard.defaultProps = {
+  movie: {},
+};
+
+export default MovieCard;
