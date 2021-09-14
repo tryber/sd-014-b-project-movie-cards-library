@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import ButtonWatch from './ButtonWatch';
 import Rating from './Rating';
 
@@ -16,13 +16,13 @@ class MovieCard extends React.Component {
           <p className="movie-card-storyline">{ storyline }</p>
           <div className="little-menu">
             <ButtonWatch weblink={ link } />
-              <div className="movie-card-rating">
-                <h6>Classificação:</h6>
-                <Rating rating={ rating } />
-              </div>
+            <div className="movie-card-rating">
+              <h6>Classificação:</h6>
+              <Rating rating={ rating } />
             </div>
           </div>
-        </section>
-      );
-    }
+        </div>
+      </section>
+    );
   }
+}
