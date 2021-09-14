@@ -4,11 +4,11 @@ import Rating from './Rating';
 import ButtonWatch from './ButtonWatch';
 
 class MovieList extends React.Component {
-    render() {
-        return (
-            <div className= "Movie-list">
-                {MovieList.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
-            </div>
+  render() {
+    return (
+      <div className= "Movie-list">
+    {MovieList.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
+      </div>
         );
     }
 }
