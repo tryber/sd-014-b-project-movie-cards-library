@@ -18,7 +18,7 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.arrayOf(PropTypes.shape(
+  movie: PropTypes.shape(
     {
       title: PropTypes.string,
       subtitle: PropTypes.string,
@@ -26,7 +26,7 @@ MovieCard.propTypes = {
       rating: PropTypes.number,
       imagePath: PropTypes.string,
     },
-  )).isRequired,
+  ).isRequired,
 };
 
 export default MovieCard;
