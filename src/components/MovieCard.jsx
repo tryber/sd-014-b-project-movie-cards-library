@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends Component {
   render() {
-    const { movie } = this.props;
+    const { movie: title, subtitle, storyline, imagePath, rating } = this.props;
     return (
-      <img src={ movie.imagePath } alt="" />
+      <img src={ imagePath } alt="" />
     );
   }
 }
