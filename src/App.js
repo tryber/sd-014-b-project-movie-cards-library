@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <MovieList />
+        <MovieList movies={ movies } />
       </div>
     );
   }
