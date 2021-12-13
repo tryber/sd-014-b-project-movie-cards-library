@@ -17,3 +17,43 @@ header {
   align-items: center;
   align-content: center;
 }
+
+.movie-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /* align-content: space-between; */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+}
+
+.movie-card {
+  padding: 2px 16px;
+/*   width: 280px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px; */
+}
+
+.movie-image {
+  width: 95%;
+  padding: 5px;
+}
+
+.title {
+  margin: 10px;
+}
+
+.subtilte {
+  margin: 10px;
+  color:rgb(117, 107, 107);
+}
+
+.storyline {
+  margin: 10px;
+  text-align: justify;
+}
