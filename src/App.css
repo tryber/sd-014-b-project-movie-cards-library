@@ -1,47 +1,49 @@
 * {
-  padding: 0;
-  margin: 0;
   border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: rgb(41, 40, 40);
+  border-bottom: 1px solid rgb(161, 147, 147);
   color: rgb(235, 226, 226);
   height: 70px;
+  margin-bottom: 30px;
 }
 
 .header-text {
-  display: flex;
-  padding-top: 10px;
-  justify-content: center;
-  align-items: center;
   align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 .movie-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  /* align-content: space-between; */
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 8px rgb(100, 18, 18), 10px 10px 8px rgb(17, 16, 16);
+  background-color: rgb(100, 18, 18);
+  border-radius: 8px;
+  color:rgb(240, 238, 238);
+  margin-bottom: 25px;
   transition: 0.3s;
-  width: 30%;
+  width: 80%;
 }
 
 .movie-card {
+  margin: 20px;
   padding: 2px 16px;
-/*   width: 280px;
-  margin: 10px;
-  border: 1px solid black;
-  border-radius: 5px; */
 }
 
 .movie-image {
+  border: 2px solid rgb(12, 9, 9);
   width: 95%;
-  padding: 5px;
 }
 
 .title {
@@ -49,11 +51,23 @@ header {
 }
 
 .subtilte {
-  margin: 10px;
   color:rgb(117, 107, 107);
+  margin: 10px;
 }
 
 .storyline {
   margin: 10px;
   text-align: justify;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 30%;
+  }
 }
